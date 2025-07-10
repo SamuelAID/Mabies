@@ -1,0 +1,127 @@
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f7fafd;
+  margin: 0;
+  color: #222;
+}
+.site-header {
+  background: #fff;
+  padding: 1.2rem 0 0.8rem 0;
+  box-shadow: 0 2px 8px rgba(120,134,211,0.05);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  height: 70px;
+  margin-bottom: 0.3rem;
+}
+.site-header h1 {
+  font-family: 'Pacifico', cursive;
+  color: #5d7edb;
+  font-size: 2rem;
+  margin: 0.1em 0 0.6em 0;
+  letter-spacing: 2px;
+}
+.site-header nav {
+  margin-bottom: 0.6em;
+}
+.site-header nav a {
+  color: #5d7edb;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 1.2em;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.site-header nav a:hover {
+  color: #74d3e0;
+}
+#journals {
+  background: #f7fafd;
+  padding: 3rem 1rem;
+}
+#journals h2 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+  color: #5d7edb;
+  margin-bottom: 2rem;
+}
+.journals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.journal-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px rgba(120,134,211,0.10);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.journal-card img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+}
+.journal-card h3 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0.5em 0 0.3em 0;
+}
+.journal-card p {
+  font-size: 0.98rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.journal-card a {
+  background: linear-gradient(90deg, #74d3e0, #7886d3);
+  color: #fff;
+  padding: 0.6em 1.5em;
+  border-radius: 1.2em;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+  font-weight: 600;
+}
+.journal-card a:hover {
+  background: linear-gradient(90deg, #7886d3, #74d3e0);
+}
+.about-section {
+  background: linear-gradient(135deg, #74d3e0 0%, #7886d3 100%);
+  padding: 3rem 1rem;
+  border-radius: 1.5rem;
+  max-width: 700px;
+  margin: 3rem auto;
+  box-shadow: 0 4px 24px rgba(120,134,211,0.08);
+  color: #fff;
+}
+.about-section h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.about-text {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .about-section {
+    margin: 1.2rem;
+    padding: 2rem 0.3rem;
+  }
+}
